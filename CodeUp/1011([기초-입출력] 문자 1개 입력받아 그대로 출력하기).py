@@ -1,2 +1,2 @@
-n = float(input())
-print("%f" %n)
+n = input()
+print(n)
