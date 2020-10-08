@@ -1,2 +1,2 @@
-a, b = map(int, (input().split()))
-print(a*(2**b))
+a = int(input())
+print(a<<1)
