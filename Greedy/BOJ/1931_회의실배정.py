@@ -4,7 +4,7 @@ data = []
 for i in range(n):
     data.append(list(map(int, input().split())))
     data[i].append(data[i][1] - data[i][0])
-data.sort(key=lambda x:x[2])
+data.sort(key=lambda x:[x[2], x[0]])
 
 start = lambda x:x[0]
 end = lambda x:x[1]
