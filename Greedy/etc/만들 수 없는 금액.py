@@ -9,4 +9,3 @@ for i in data:
     target += i
 
 print(target)
-
