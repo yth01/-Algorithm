@@ -1,4 +1,3 @@
-'''
 S = list(map(int, input()))
 
 count_0 = 0
@@ -15,8 +14,8 @@ for i in S:
         count_1 += 1
 
 print(count_0 if count_0 < count_1 else count_1)
-'''
 
+'''
 data = input()
 count0 = 0
 count1 = 0
@@ -34,4 +33,5 @@ for i in range(len(data) - 1):
             count1 += 1
 
 print(min(count0, count1))
+'''
 

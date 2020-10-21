@@ -1,4 +1,3 @@
-'''
 data = list(map(int, input()))
 
 result = 0
@@ -9,8 +8,8 @@ for i in data:
         result *= i
 
 print(result)
-'''
 
+'''
 data = input()
 
 result = int(data[0])
@@ -23,3 +22,4 @@ for i in range(1, len(data)):
         result *= num
 
 print(result)
+'''

@@ -1,4 +1,3 @@
-'''
 n, k = map(int, input().split())
 count = 0
 while n != 1:
@@ -9,8 +8,8 @@ while n != 1:
         n -= 1
         count += 1
 print(count)
-'''
 
+'''
 # N, K공백을 기준으로 구분하여 입력 받기
 n, k = map(int, input().split())
 
@@ -31,3 +30,4 @@ while True:
 # 마지막으로 남은 수에 대하여 1씩 빼기
 result += (n - 1)
 print(result)
+'''

@@ -1,4 +1,3 @@
-'''
 n, m, k = map(int, input().split())
 data = list(map(int, input().split()))
 
@@ -19,8 +18,8 @@ while True:
     result += second
     m -= 1
 print(result)
-'''
 
+'''
 n, m, k = map(int, input().split())
 data = list(map(int, input().split()))
 
@@ -36,3 +35,4 @@ result += (count) * first
 result += (m - count) * second
 
 print(result)
+'''
