@@ -30,7 +30,6 @@ dijkstra(start)
 count = 0
 max_distance = 0
 for d in distance:
-    # 도달할 수 있는 노드인 경우
     if d != 1e9:
         count += 1
         max_distance = max(max_distance, d)
