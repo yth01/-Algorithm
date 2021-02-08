@@ -5,17 +5,13 @@ while 1:
 
     if L == 0 and P == 0 and V == 0:
         break
+
+    if V > P:
+        result += L * (V // P)
+    if V % P < L:
+        result += V % P
     else:
-        while 1:
-            if V > P:
-                V -= P
-                result += L
-            else:
-                if V < L:
-                    result += V
-                else:
-                    result += L
-                break
+        result += L
 
     print("Case %d: %d" %(count, result))
     count += 1
