@@ -1,27 +1,19 @@
-import re
-
-data = []
 while True:
     sentence = input()
     if sentence == '.':
         break
-    else:
-        data.append(sentence)
-
-data = list(map(lambda x:''.join(re.findall(r'[\[\]\(\)]', x)), data))
-
-for i in data:
+            
     stack = []
-    for j in i:
-        if j == '[' or j == '(':
-            stack.append(j)
-        elif j == ']':
+    for i in sentence:
+        if i == '[' or i == '(':
+            stack.append(i)
+        elif i == ']':
             if len(stack) != 0 and stack[-1] == '[':
                 stack.pop()
             else:
                 stack.append('exit')
                 break
-        elif j == ')':
+        elif i == ')':
             if len(stack) != 0 and stack[-1] == '(':
                 stack.pop()
             else:
