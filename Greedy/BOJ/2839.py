@@ -1,14 +1,14 @@
 n = int(input())
-count = 0
 
+cnt = 0
 while n > 0:
     if n % 5 == 0:
-        count += 1
         n -= 5
-    else:
-        count += 1
+        cnt += 1
+    else: 
         n -= 3
+        cnt += 1
 if n < 0:
-    count = -1
+    cnt = -1
 
-print(count)
+print(cnt)
